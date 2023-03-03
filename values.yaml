@@ -1,1 +1,1 @@
-env-value: ${serviceVariables.MY_ENV_VARIABLE}
+envValue: ${serviceVariables.MY_ENV_VARIABLE}
