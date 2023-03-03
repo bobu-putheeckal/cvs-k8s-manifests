@@ -130,6 +130,6 @@ metadata:
   name: back-end-2-configmap
 data:
   # Add your key-value pairs here
-  MY_ENV_VARIABLE: value1
+  MY_ENV_VARIABLE: ${MY_ENV_VARIABLE}
   key2: value2
   key3: value3
