@@ -118,4 +118,4 @@ spec:
           image: bobput/back-end-2:latest
           env:
             - name: MY_ENV_VARIABLE
-              value: "<+serviceVariables.MY_ENV_VARIABLE>"
+              value: "${MY_ENV_VARIABLE}"
