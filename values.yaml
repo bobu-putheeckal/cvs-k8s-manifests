@@ -1,2 +1,3 @@
 # envValue: ${serviceVariables.MY_ENV_VARIABLE}
-envValue: ${env.variables.MY_ENV_VARIABLE}
+# envValue: ${env.variables.MY_ENV_VARIABLE}
+envValue: <+serviceVariables.MY_ENV_VARIABLE>
