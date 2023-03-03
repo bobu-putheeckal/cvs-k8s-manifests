@@ -48,5 +48,3 @@ metadata:
 data:
   # Add your key-value pairs here
   MY_ENV_VARIABLE: {{.Values.envValue}}
-  key2: value2
-  key3: value3

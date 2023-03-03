@@ -39,6 +39,21 @@ spec:
               name: ui
           env:
             - name: API
-              value: "<+serviceVariables.API>"
+              valueFrom:
+                configMapKeyRef:
+                  name: ui-configmap
+                  key: API
             - name: AUTH_TOKEN
-              value: "<+serviceVariables.AUTH_TOKEN>"
+              valueFrom:
+                configMapKeyRef:
+                  name: ui-configmap
+                  key: AUTH_TOKEN
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ui-configmap
+data:
+  # Add your key-value pairs here
+  API: {{.Values.api}}
+  AUTH_TOKEN: {{.Values.authToken}}

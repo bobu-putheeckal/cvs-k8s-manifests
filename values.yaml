@@ -1,1 +1,3 @@
 envValue: <+serviceVariables.MY_ENV_VARIABLE>
+authToken: <+serviceVariables.AUTH_TOKEN>
+api: <+serviceVariables.API>
